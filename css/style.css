@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face{
+    font-family:'Kids Magazine';
+    src: url(../assets/Fonts/Kids\ Magazine.ttf)
+}
+@font-face{
+    font-family:'FuturaHandwritten';
+    src: url(../assets/Fonts/FuturaHandwritten.ttf)
+}
+:root{
+    --white-color:#FBFAEC;
+    --light-pink-color:#D9C1B8;
+    --light-black-color:#2C2F40;
+    --light-green-color:#ACBF8F;
+    --middle-green-color:#798C5D;
+    --dark-green-color:#5A7336;
+    --yellow-color:#FDBE56;
+    --red-color:#a8152f;
+    --comic-font-family:'Comic Neue', cursive;
+    --font-26: 26px;
+    --font-24: 24px;
+    --font-18: 18px;
+    --font-14: 14px;
+    --font-12: 12px;
+    --font-10: 10px;
+}
+*{
+    cursor: none;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family:'FuturaHandwritten';
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-track {
+    background-color:var(--light-black-color);
+}
+body::-webkit-scrollbar-thumb {
+    background-color:transparent;
+    border-radius: 20px;
+    border: 6px solid var(--red-color);
+    background-clip: content-box;
+}
+/* first line */
+.first-line{
+    display: flex;
+    justify-content: center;
+}
+.first-line .left-polygon{
+    background-color: var(--light-pink-color);
+    display: table-row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 190px;
+    clip-path: polygon(0 0, 100% 0, 83% 100%, 0 100%);
+}
+.profile-pic{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-56%,9%);
+    width: 150px;
+    height: 150px;
+    background-color: var(--white-color);
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.left-polygon img{
+    width: 132px;
+    height: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.download-button-res{
+    display: none;
+}
+.first-line .right-polygon{
+    background-color: var(--white-color);
+    position: relative;
+    width: 500px;
+    height: 190px;
+    clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%);
+}
+.name{
+    color: var(--light-green-color);
+    font-family:'Kids Magazine';
+    text-shadow: 4px 3px 0 var(--light-black-color);
+    font-size: var(--font-26);
+    margin-left: 45px;
+    margin-top: 5px;
+}
+.intro{
+    margin-left: 45px;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: var(--font-14);
+    font-style: italic;
+    color: var(--light-black-color);
+}
+.intro-plus-download-button{
+    display: flex;
+}
+.right-polygon a{
+    display: block;
+    color: var(--light-black-color);
+    font-size: 24px;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+/* end of first line */
+
+
+
+/* second line */
+
+/* left */
+.second-line{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+}
+.second-line .left-polygon{
+    width: 335px;
+    margin-right: 15px;
+    display: row;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+.second-line .right-polygon{
+    width: 335px;
+    margin-left: 15px;
+    background-color: var(--light-green-color);
+}
+.left-polygon .big-title, .right-polygon .big-title{
+    margin-top: -18px;
+    text-align: center;
+    text-shadow: 4px 3px 0 var(--light-black-color);
+    color: var(--light-pink-color);
+    font-size: var(--font-16);
+    font-weight: 600;
+    font-family:'Kids Magazine';
+    letter-spacing: 1.2px;
+}
+.programming-skills .small-title, .designing-skills .small-title, .language-skills .small-title{
+    margin-top:10px;
+    font-size: var(--font-18);
+    font-weight: 700;
+    color: var(--light-black-color);
+    text-align: center;
+}
+.single-programming-language, .adwords-script{
+    margin-top:6px;
+    font-size: var(--font-16);
+    margin-left: 10px;
+    color: var(--light-black-color);
+}
+.html-css-title,.javascript-title,.reactjs-title,.bootstrap-title{
+    font-size: var(--font-16);
+    font-weight: 600;
+    color: var(--light-black-color);
+}
+.designing-single-skill{
+    display: flex;
+    margin-top:10px;
+    justify-content: space-evenly;
+    color: var(--light-black-color);
+}
+.single-language{
+    display: flex;
+    margin:10px 38px 10px 38px;
+    justify-content: space-between;
+    align-items: center;   
+    color: var(--light-black-color);
+}
+.g-product{
+    margin-top:4px;
+    text-align: center;
+}
+/* end of left */
+
+/* right */
+.right-up-polygon .small-title{
+    text-align: center;
+    margin-top: 12px;
+    font-size: var(--font-16);
+    font-weight: 600;
+    color: var(--light-black-color);
+}
+.experience .text{
+    margin-left: 10px;
+    margin-top: 6px;
+    color: var(--light-black-color);
+}
+/* end of right */
+
+/*--- end of second line ---*/
+
+
+
+/*--- third line ---*/
+.third-line{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* left */
+.third-line .left-polygon{
+    margin-right: 15px;
+    width: 460px;
+    background-color: var(--light-green-color);
+}
+.third-line .right-polygon{
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    background-color: var(--white-color);
+}
+.contact{
+    display: row;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-left: 10px;
+    text-align: center;
+    color: var(--light-black-color);
+    font-weight: 600;
+}
+.contact a{
+    text-decoration:underline var(--light-black-color) 1.5px;
+    color: var(--light-black-color);
+}
+.hobby{
+    margin-top:10px;
+    padding: 0 5px 0 5px;
+}
+.hobby:last-child{
+    color: var(--light-black-color);
+    padding-bottom: 10px;
+}
+/* end of left */
+
+/* right */
+.third-line .right-polygon{
+    text-align: center;
+}
+/* end of right */
+
+/*--- end of third line ---*/
+
+
+
+/* condition */
+.condition{
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--light-black-color);
+    text-align: center;
+    width: 700px;
+    font-size: var(--font-10);
+}
+/* end of condition */
+
+
+
+/*--- CURSOR ---*/
+.inner-cursor{
+    position:fixed;
+    left:100px;
+    top:100px;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%,-50%);
+    transition: width 0.5s, height 0.5s;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    pointer-events:none;
+    pointer-events: none;
+    z-index: 2;
+}
+.inner-cursor.width-height-scale-up{
+    animation: scaleUp 1s ease infinite;
+}
+.outer-cursor.border-scale-up{
+    animation: borderScaleUp 1s ease infinite;
+}
+.outer-cursor{
+    position: fixed;
+    left:100px;
+    top:100px;
+    width: 65px;
+    height: 65px;
+    transform: translate(-50%,-50%);
+    border:1.5px solid var(--red-color);
+    border-radius: 50%;
+    pointer-events: 0.1ms;
+    transition:0.15s;
+    pointer-events: none;
+    z-index: 2;
+}
+.text-cv-download-cursor{
+    position:fixed;
+    color: var(--red-color);
+    font-family:'FuturaHandwritten';
+    font-weight: 600;
+    font-size: 18px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+/*--- END OF CURSOR ---*/
+
+
+
+/*--- BOTTOM NAVBAR ---*/
+.navbar-card{
+    display: none;
+}
+.navbar-menu{
+    display: none;
+}
+/*--- END OF BOTTOM NAVBAR ---*/
+
+
+/*--- ANIMATIONS ---*/
+@keyframes borderScaleUp{
+    0%{
+        border:1.5px solid var(--red-color);
+    }
+    50%{
+        border:2.5px solid var(--red-color);
+    }
+    100%{
+        border:1.5px solid var(--red-color);
+    }
+}
+@keyframes scaleUp{
+    0%{
+        width:16px;
+        height:16px;
+    }
+    50%{
+        width:22px;
+        height:22px;
+    }
+    100%{
+        width:16px;
+        height:16px;
+    }
+}
+@keyframes letterGrownUp{
+    0%{
+        font-size:24px;
+    }
+    50%{
+        font-size:32px;
+    }
+    100%{
+        font-size:24px;
+    }
+}
+/* END OF ANIMATIONS */
